@@ -34,7 +34,7 @@ public class MenuItem
 
     public void PrintMenuItem()
     {
-         Console.WriteLine($"Item {Id, -3} - {MenuItemName, -45} - ${Price:0.00}.  {MenuItemDesc} {VegetarianStatement.CheckVegetarianStatus(IsVegetarian)}{AllergyStatement.CreateAllergyStatement(ContainsDairy)}{ItemAvailability.CheckItemAvailability(IsAvailable)}");
+         Console.WriteLine($"Item {Id, -3} - {MenuItemName, -45} ${Price,6:0.00}  {MenuItemDesc} {VegetarianStatement.CheckVegetarianStatus(IsVegetarian)}{AllergyStatement.CreateAllergyStatement(ContainsDairy)}{ItemAvailability.CheckItemAvailability(IsAvailable)}");
     }
 
 }
