@@ -7,7 +7,7 @@
         public static string WelcomeCustomer()
         {
             Console.WriteLine(WelcomeMessage);
-            Console.WriteLine("What's your name?");
+            Console.Write("What's your name?");
             string? customerName = Console.ReadLine();
             if (string.IsNullOrEmpty(customerName))
                 customerName = "Valued Customer";
